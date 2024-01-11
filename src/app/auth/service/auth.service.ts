@@ -10,7 +10,7 @@ import {Router} from "@angular/router";
   providedIn: 'root'
 })
 export class AuthService {
-  private host = environment.apiUrl;
+  public host = environment.apiUrl;
   private isAuthenticated = false;
   private token!: string | null;
   private tokenTimer: any;
