@@ -6,15 +6,15 @@
     </div>
 
     <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-      <form class="space-y-6">
+      <form class="space-y-6" [formGroup]="loginForm" (ngSubmit)="onLogin()">
         <div>
           <mat-form-field class="example-full-width">
             <mat-label>Email</mat-label>
-            <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
-            @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
+            <input type="email" matInput formControlName="emailFormControl"  placeholder="Ex. pat@example.com">
+            @if (loginForm.controls.emailFormControl.hasError('email') && !loginForm.controls.emailFormControl.hasError('required')) {
               <mat-error>Please enter a valid email address</mat-error>
             }
-            @if (emailFormControl.hasError('required')) {
+            @if (loginForm.controls.emailFormControl.hasError('required')) {
               <mat-error>Email is <strong>required</strong></mat-error>
             }
           </mat-form-field>
@@ -23,18 +23,26 @@
         <div>
           <mat-form-field class="example-full-width">
             <mat-label>Password</mat-label>
-            <input matInput [type]="hide ? 'password' : 'text'" [formControl]="passwordFormControl">
+            <input matInput [type]="hide ? 'password' : 'text'" formControlName="passwordFormControl">
             <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
               <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
-            @if (passwordFormControl.hasError('required')) {
+            @if (loginForm.controls.passwordFormControl.hasError('required')) {
               <mat-error>Password is <strong>required</strong></mat-error>
             }
           </mat-form-field>
         </div>
 
         <div>
-          <button type="submit" class="w-full" style="background-color: #5552fe" mat-raised-button color="primary">Sign in</button>
+          <button type="submit" class="w-full" [disabled]="loginForm.invalid || showLoading" style="background-color: #5552fe" mat-raised-button color="primary">
+            @if(!showLoading) {
+              Sign in
+            } @else {
+              <div class="flex justify-center">
+                Loading...<mat-spinner diameter="20" color="accent"></mat-spinner>
+              </div>
+            }
+          </button>
         </div>
       </form>
     </div>
