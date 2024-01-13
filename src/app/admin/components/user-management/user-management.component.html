@@ -1,0 +1,131 @@
+<div class="example-container mat-elevation-z8">
+  @if (isLoadingResults || isRateLimitReached) {
+    <div class="example-loading-shade">
+      @if (isLoadingResults) {
+        <mat-spinner></mat-spinner>
+      }
+      @if (isRateLimitReached) {
+        <div class="example-rate-limit-reached">
+          Reload the page.
+        </div>
+      }
+    </div>
+  }
+
+  <div class="example-table-container">
+
+    <table mat-table [dataSource]="userDataSource" class="example-table">
+
+      <!-- ID Column -->
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> ID</th>
+        <td mat-cell *matCellDef="let row"> {{ row.id }}</td>
+      </ng-container>
+
+      <!-- EMAIL TYPE Column -->
+      <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef> EMAIL</th>
+        <td mat-cell *matCellDef="let row"> {{ row.email }}</td>
+      </ng-container>
+
+      <!-- FULL NAME Column -->
+      <ng-container matColumnDef="fullName">
+        <th mat-header-cell *matHeaderCellDef> FULL NAME</th>
+        <td mat-cell *matCellDef="let row"> {{ row.fullName }}</td>
+      </ng-container>
+
+      <!-- PROFILE TYPE Column -->
+      <ng-container matColumnDef="profileType">
+        <th mat-header-cell *matHeaderCellDef> PROFILE TYPE</th>
+        <td mat-cell *matCellDef="let row"> {{ row.profileType }}</td>
+      </ng-container>
+
+      <!-- ACTIVE Column -->
+      <ng-container matColumnDef="isActive">
+        <th mat-header-cell *matHeaderCellDef> ACTIVE</th>
+        <td mat-cell *matCellDef="let row">
+          @if (row.isActive) {
+            <mat-icon style="color: green">check_circle</mat-icon>
+          } @else {
+            <mat-icon color="warn">cancel</mat-icon>
+          }
+        </td>
+      </ng-container>
+
+      <!-- LOCKED Column -->
+      <ng-container matColumnDef="isNotLocked">
+        <th mat-header-cell *matHeaderCellDef>NOT LOCKED</th>
+        <td mat-cell *matCellDef="let row">
+          @if (row.isNotLocked) {
+            <mat-icon style="color: green">check_circle</mat-icon>
+          } @else {
+            <mat-icon color="warn">cancel</mat-icon>
+          }
+        </td>
+      </ng-container>
+
+      <!-- LOCKED Column -->
+      <ng-container matColumnDef="activatedAt">
+        <th mat-header-cell *matHeaderCellDef> ACTIVATED DATE</th>
+        <td mat-cell *matCellDef="let row"> {{ row.activatedAt | date: "short" }}</td>
+      </ng-container>
+
+      <!-- ACTION Column -->
+      <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef> ACTION</th>
+        <td mat-cell *matCellDef="let row">
+          <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item disabled>
+              <mat-icon color="accent">remove_red_eye</mat-icon>
+              <span>Details</span>
+            </button>
+            <button mat-menu-item (click)="patchIsValid(row.id)">
+              @if (row.isActive) {
+                <mat-icon color="warn">block</mat-icon>
+                <span>Block</span>
+              } @else {
+                <mat-icon style="color: green">lock_open</mat-icon>
+                <span>Unblock</span>
+
+              }
+            </button>
+            <button mat-menu-item (click)="patchIsLocked(row.id)">
+              @if (row.isNotLocked) {
+                <mat-icon color="warn">lock</mat-icon>
+                <span>Lock</span>
+              } @else {
+                <mat-icon style="color: green">lock_open</mat-icon>
+                <span>Unlock</span>
+              }
+            </button>
+            <button mat-menu-item (click)="deleteUser(row.id)" disabled>
+              <mat-icon color="warn">delete_forever</mat-icon>
+              <span>Delete</span>
+            </button>
+          </mat-menu>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+      <!-- Row shown when there is no matching data. -->
+      <!--      <tr class="mat-row" *matNoDataRow>-->
+      <!--        <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>-->
+      <!--      </tr>-->
+    </table>
+
+
+  </div>
+
+  <mat-paginator [length]="resultsLength"
+                 [pageSize]="10"
+                 [pageSizeOptions]="[5, 10, 25, 100]"
+                 aria-label="Select page of posts"></mat-paginator>
+</div>
+
+
+

@@ -1,2 +1,40 @@
-<p>full works!</p>
-<router-outlet></router-outlet>
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+  <mat-toolbar style="background-color: #5552fe; color: #f2f2f2" class="example-toolbar">
+    <button mat-icon-button (click)="snav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h1 class="example-app-name">Ensak Connect</h1>
+    <span class="example-spacer"></span>
+
+    <span (click)="onLogOut()" style="cursor: pointer">
+      Logout
+    </span>
+
+      <button mat-icon-button (click)="onLogOut()">
+        <mat-icon>logout</mat-icon>
+      </button>
+
+
+  </mat-toolbar>
+
+  <mat-sidenav-container class="example-sidenav-container"
+                         [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+      <mat-nav-list>
+        @for (nav of fillerNav; track nav) {
+          <a mat-list-item [routerLink]="nav.link">{{ nav.name }}</a>
+        }
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+
+      <router-outlet></router-outlet>
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+
+
