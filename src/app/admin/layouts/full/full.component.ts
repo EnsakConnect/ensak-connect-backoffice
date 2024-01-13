@@ -36,7 +36,7 @@ export class FullComponent implements OnDestroy {
     },
     {
       name: "Report",
-      link: "report"
+      link: "reports"
     },
     {
       name: "User management",

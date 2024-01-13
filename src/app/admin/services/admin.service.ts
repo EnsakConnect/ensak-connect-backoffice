@@ -6,6 +6,7 @@ import {DashboardResponseDto} from "../dto/DashboardResponseDto";
 import {Page} from "../../core/model/page.model";
 import {FeedPostsResponseDto} from "../dto/FeedPostsResponseDto";
 import {UsersPageResponseDto} from "../dto/UsersPageResponseDto";
+import {ReportsPageResponseDto} from "../dto/ReportsPageResponseDto";
 
 @Injectable({
   providedIn: 'root'
@@ -30,11 +31,19 @@ export class AdminService {
   public deleteUserByUserId(id: number): Observable<null> {
     return this.http.delete<null>(`${this.host}/back-offices/users/delete/${id}`);
   }
+
+  public deleteReportById(id: number): Observable<null> {
+    return this.http.delete<null>(`${this.host}/admin/reports/${id}`);
+  }
   public getFeedPost(page: number, size: number, filter: string, search: string): Observable<Page<FeedPostsResponseDto>> {
     return this.http.get<Page<FeedPostsResponseDto>>(`${this.host}/feeds?page=${page}&size=${size}&filter=${filter}&search=${search}`);
   }
 
   public getUsersPage(page: number, size: number): Observable<Page<UsersPageResponseDto>> {
     return this.http.get<Page<UsersPageResponseDto>>(`${this.host}/back-offices/users?page=${page}&size=${size}`);
+  }
+
+  public getReportsPage(page: number, size: number): Observable<Page<ReportsPageResponseDto>> {
+    return this.http.get<Page<ReportsPageResponseDto>>(`${this.host}/admin/reports?page=${page}&size=${size}`);
   }
 }

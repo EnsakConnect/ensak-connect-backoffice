@@ -14,6 +14,7 @@ import {map} from "rxjs/operators";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import {MatIconModule} from "@angular/material/icon";
 import {MatMenuModule} from "@angular/material/menu";
+import {MatButtonModule} from "@angular/material/button";
 
 
 export interface UserData {
@@ -34,7 +35,8 @@ export interface UserData {
     MatPaginatorModule,
     MatProgressSpinnerModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    MatButtonModule
   ],
   templateUrl: './post-management.component.html',
   styleUrl: './post-management.component.scss'

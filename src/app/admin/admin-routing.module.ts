@@ -4,6 +4,7 @@ import {FullComponent} from "./layouts/full/full.component";
 import {DashboardComponent} from "./components/dashboard/dashboard.component";
 import {PostManagementComponent} from "./components/post-management/post-management.component";
 import {UserManagementComponent} from "./components/user-management/user-management.component";
+import {ReportComponent} from "./components/report/report.component";
 
 const routes: Routes = [
   {
@@ -30,6 +31,14 @@ const routes: Routes = [
       {
         path: `users?page=:page&size=:size`,
         component: UserManagementComponent
+      },
+      {
+        path: 'reports',
+        component: ReportComponent
+      },
+      {
+        path: `reports?page=:page&size=:size`,
+        component: ReportComponent
       }
 
     ]
