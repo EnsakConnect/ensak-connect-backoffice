@@ -54,7 +54,7 @@ export class AuthService {
 
   public login(email: string, password: string): Observable<{ token: string; refreshToken: string; }> {
     const authData: LoginRequestDto = {email: email, password: password};
-    return this.http.post<{ token: string; refreshToken: string; }>(`${this.host}auth/login`, authData);
+    return this.http.post<{ token: string; refreshToken: string; }>(`${this.host}/auth/login`, authData);
   }
 
   autoAuthUser() {

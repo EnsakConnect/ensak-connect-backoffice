@@ -1,0 +1,42 @@
+<div class="grid-container">
+    <h1 class="mat-h1">DASHBOARD</h1>
+    <mat-grid-list cols="2" rowHeight="400px">
+        @for (card of cards | async; track card) {
+            <mat-grid-tile [colspan]="card.cols" [rowspan]="card.rows">
+                <mat-card class="dashboard-card">
+                    <mat-card-header>
+                        <mat-card-title>
+                            {{ card.title }}
+                        </mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content class="dashboard-card-content " >
+                        @if (card.title == "Overview" && flag1 && flag2 && flag3) {
+                            <div >
+                              <apx-chart
+                                [series]="card.chartOptions.series"
+                                [chart]="card.chartOptions.chart"
+                                [dataLabels]="card.chartOptions.dataLabels"
+                                [plotOptions]="card.chartOptions.plotOptions"
+                                [legend]="card.chartOptions.legend"
+                                [fill]="card.chartOptions.fill"
+                                [stroke]="card.chartOptions.stroke"
+                                [tooltip]="card.chartOptions.tooltip"
+                                [xaxis]="card.chartOptions.xaxis"
+                              ></apx-chart>
+                            </div>
+                        } @else {
+                            <div class="charts">
+                                <apx-chart
+                                        [series]="card.chartOptions.series"
+                                        [chart]="card.chartOptions.chart"
+                                        [labels]="card.chartOptions.labels"
+                                        [responsive]="card.chartOptions.responsive"
+                                ></apx-chart>
+                            </div>
+                        }
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+        }
+    </mat-grid-list>
+</div>

@@ -64,7 +64,7 @@ export class LoginComponent {
           //this.authenticationService.addUserToLocalCache(response.user);
 
           this.showLoading = false;
-          this.router.navigate(['/']);
+          this.router.navigate(['/admin']);
 
         },
         (errorResponse: HttpErrorResponse) => {
