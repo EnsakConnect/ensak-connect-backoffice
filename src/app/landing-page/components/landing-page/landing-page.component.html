@@ -1,683 +1,199 @@
 <div>
-  <div class="hp-body-bg ">
-    <div class="grid-container mb-0 mt-0" >
-      <mat-grid-list cols="2" rowHeight="200px" >
-
-        <mat-grid-tile  [colspan]="2" [rowspan]="1" >
-
-          <div class="flex items-center w-full h-full" >
-            <a href="/" class="mr-auto my-auto w-full h-full">
-              <div class="w-full h-full" style="background-position: center;
-  background-size: contain;
-  background-image: url(../../../../assets/Ensak-Connect.webp);
-  background-repeat: no-repeat;">
-              </div>
-            </a>
-          </div>
-
-        </mat-grid-tile>
-
-
-      </mat-grid-list>
-    </div>
-
-
-    <div class="grid-container mb-5" >
-      <mat-grid-list cols="2" rowHeight="350px" >
-
-        <ng-container [ngSwitch]="stepperOrientation | async">
-
-                    <div *ngSwitchCase="'horizontal'">
-                      <mat-grid-tile  [colspan]="1" [rowspan]="1" >
-
-                        <div class="w-full">
-                          <h1 class="font-semibold  " style="font-size:36px">
-                            ENSAK CONNECT
-
-                          </h1>
-                          <p class="mb-4" style="font-size:16px">
-                            ENSAK Connect is an application developed for the National School of Applied Sciences of Kenitra (ENSA-Kenitra)
-                            community with the aim of facilitating students integration into the job market.
-                            It provides internship offers for students and graduates, assisting them in finding jobs or internships.
-                            Additionally, it is designed for professors to post doctoral offers and support their students in seamlessly
-                            integrating into the market.
-
-                          </p>
-
-
-                        </div>
-
-
-
-                      </mat-grid-tile>
-
-                      <mat-grid-tile  [colspan]="1" [rowspan]="1" >
-
-                        <div class="flex items-center w-full h-full" >
-                          <div class="w-full h-full" style="background-position: center;
-  background-size: contain;
-  background-image: url(../../../../assets/banner.png);
-  background-repeat: no-repeat;">
-                          </div>
-
-                        </div>
-
-
-                      </mat-grid-tile>
-
-
-                    </div>
-
-                    <div *ngSwitchCase="'vertical'" class="grid-container-sm">
-
-                      <mat-grid-tile  [colspan]="2" [rowspan]="1" >
-
-                        <div>
-                          <h1 class="font-semibold " style="font-size:36px">
-                            ENSAK CONNECT
-
-                          </h1>
-                          <p class="mb-4" style="font-size:16px">
-                            ENSAK Connect is an application developed for the National School of Applied Sciences of Kenitra (ENSA-Kenitra)
-                            community with the aim of facilitating students integration into the job market.
-                            It provides internship offers for students and graduates, assisting them in finding jobs or internships.
-                            Additionally, it is designed for professors to post doctoral offers and support their students in seamlessly
-                            integrating into the market.
-
-                          </p>
-
-                        </div>
-
-
-                      </mat-grid-tile>
-
-
-                      <mat-grid-tile  [colspan]="2" [rowspan]="1" >
-
-                        <div class="flex items-center w-full h-full" >
-                          <div class="w-full h-full" style="background-position: center;
-  background-size: contain;
-  background-image: url(../../../../assets/banner.png);
-  background-repeat: no-repeat;">
-                          </div>
-
-                        </div>
-
-
-                      </mat-grid-tile>
-
-
-                    </div>
-
-
-        </ng-container>
-
-
-      </mat-grid-list>
-    </div>
-
-
-    <div class="features-3" >
-      <div class="grid-container mb-5 mt-3 " >
-        <mat-card >
-          <mat-card-header>
-            <mat-card-title class="section-title-h2">ALL IN ONE</mat-card-title>
-          </mat-card-header>
-          <mat-card-content>
-            <div class="features ">
-              <div class="container"  >
-
-                <mat-grid-list cols="3" rowHeight="350px" >
-
-                  <ng-container [ngSwitch]="stepperOrientation | async">
-                    <div *ngSwitchCase="'horizontal'">
-
-
-                      <mat-grid-tile  [colspan]="1" [rowspan]="1" >
-
-                        <div class="icon-box">
-                          <h3>YOUR DREAM JOB</h3>
-                          <div class="flex items-center w-full h-full" >
-                              <div class="w-full h-full" style="background-position: center;
-  background-size: contain;
-  background-image: url(../../../../assets/Joboffers.gif);
-  background-repeat: no-repeat;">
-                              </div>
-
-                          </div>
-                        </div>
-
-                      </mat-grid-tile>
-
-                      <mat-grid-tile  [colspan]="1" [rowspan]="1" >
-
-                        <div class="icon-box">
-                          <h3>SHARE YOUR EXPERIENCES</h3>
-                          <div class="flex items-center w-full h-full" >
-                              <div class="w-full h-full" style="background-position: center;
-  background-size: contain;
-  background-image: url(../../../../assets/Content.gif);
-  background-repeat: no-repeat;">
-                              </div>
-                          </div>
-                        </div>
-
-                      </mat-grid-tile>
-
-                      <mat-grid-tile  [colspan]="1" [rowspan]="1">
-
-                        <div class="icon-box">
-                          <h3>
-                            ASK QUESTIONS!
-                          </h3>
-                          <div class="flex items-center w-full h-full" >
-                            <div class="w-full h-full" style="background-position: center;
-  background-size: contain;
-  background-image: url(../../../../assets/Questions.gif);
-  background-repeat: no-repeat;">
-                            </div>
-                          </div>
-                        </div>
-
-                      </mat-grid-tile>
-
-                    </div>
-
-                    <div *ngSwitchCase="'vertical'" class="grid-container-sm">
-
-                      <mat-grid-tile  [colspan]="3" [rowspan]="1" >
-
-                        <div class="icon-box w-full text-center">
-                          <h3 class="text-center w-full">YOUR DREAM JOB</h3>
-                          <div class="flex items-center w-full h-full" >
-                            <div class="w-full h-full" style="background-position: center;
-  background-size: contain;
-  background-image: url(../../../../assets/Joboffers.gif);
-  background-repeat: no-repeat;">
-                            </div>
-
-                          </div>
-                        </div>
-
-                      </mat-grid-tile>
-
-                      <mat-grid-tile  [colspan]="3" [rowspan]="1" >
-
-                        <div class="icon-box w-full text-center">
-                          <h3 class="text-center w-full">SHARE YOUR EXPERIENCES</h3>
-                          <div class="flex items-center w-full h-full" >
-                            <div class="w-full h-full" style="background-position: center;
-  background-size: contain;
-  background-image: url(../../../../assets/Content.gif);
-  background-repeat: no-repeat;">
-                            </div>
-                          </div>
-                        </div>
-
-                      </mat-grid-tile>
-
-                      <mat-grid-tile  [colspan]="3" [rowspan]="1">
-
-                        <div class="icon-box w-full text-center">
-                          <h3 class="text-center w-full">ASK QUESTIONS!
-                          </h3>
-                          <div class="flex items-center w-full h-full" >
-                            <div class="w-full h-full" style="background-position: center;
-  background-size: contain;
-  background-image: url(../../../../assets/Questions.gif);
-  background-repeat: no-repeat;">
-                            </div>
-                          </div>
-                        </div>
-
-
-                      </mat-grid-tile>
-
-                    </div>
-
-
-                  </ng-container>
-
-                </mat-grid-list>
-
-              </div>
-            </div>
-          </mat-card-content>
-        </mat-card>
-
-      </div>
-    </div>
-
-
-    <div class="features-3" >
-      <div class="grid-container mb-5 mt-3 " >
-        <mat-card >
-          <mat-card-header>
-            <mat-card-title class="section-title-h2">PROJECT DIRECTORS</mat-card-title>
-          </mat-card-header>
-          <mat-card-content>
-            <div class="features ">
-              <div class="container"  >
-
-                <mat-grid-list cols="2" rowHeight="350px" >
-
-                  <ng-container [ngSwitch]="stepperOrientation | async">
-                    <div *ngSwitchCase="'horizontal'">
-
-
-                      <mat-grid-tile  [colspan]="1" [rowspan]="1" >
-
-                        <div class="icon-box" style="flex-direction: row">
-
-                          <div class="flex items-center w-full h-full m-1" >
-                            <div class="w-full h-full" style="background-position: center;
-  background-size: contain;
-  background-image: url(../../../../assets/image_prof_gahi.jpg);
-  background-repeat: no-repeat;">
-                            </div>
-                            <div class="text-left p-1">
-                              <h3>Youssef Gahi </h3>
-                              <p>Associate Professor | Data Transformatioin Specialist | Big Data
-                                Trainer | Industry-Academia coordinator | Senior Researcher | IEEE Senior Member</p>
-                            </div>
-
-                          </div>
-                        </div>
-
-                      </mat-grid-tile>
-
-                      <mat-grid-tile  [colspan]="1" [rowspan]="1" >
-
-                        <div class="icon-box" style="flex-direction: row">
-
-                          <div class="flex items-center w-full h-full m-1" >
-                            <div class="w-full h-full" style="background-position: center;
-  background-size: contain;
-  background-image: url(../../../../assets/image_prof_bouzekri.jpg);
-  background-repeat: no-repeat;">
-                            </div>
-                            <div class="text-left p-1">
-                              <h3>Yunes El Bouzekri El Idrissi</h3>
-                              <p>Professor at Ibn Tofail University | IHM and JEE specialist | Backend Director
-                                | Dev Web | Javascript Expert</p>
-                            </div>
-
-                          </div>
-                        </div>
-
-                      </mat-grid-tile>
-
-
-                    </div>
-
-                    <div *ngSwitchCase="'vertical'" class="grid-container-sm">
-
-
-                      <mat-grid-tile  [colspan]="2" [rowspan]="1" >
-
-                        <div class="icon-box w-full text-center" >
-                          <div class="flex items-center w-full h-full m-1" >
-                            <div class="w-full h-full" style="background-position: center;
-  background-size: contain;
-  background-image: url(../../../../assets/image_prof_gahi.jpg);
-  background-repeat: no-repeat;">
-                            </div>
-                          </div>
-                          <div class="text-left p-1">
-                            <h3>Youssef Gahi </h3>
-                            <p>Associate Professor | Data Transformatioin Specialist | Big Data
-                              Trainer | Industry-Academia coordinator | Senior Researcher | IEEE Senior Member</p>
-                          </div>
-                        </div>
-
-                      </mat-grid-tile>
-
-                      <mat-grid-tile  [colspan]="2" [rowspan]="1">
-
-                        <div class="icon-box w-full text-center">
-                          <div class="flex items-center w-full h-full m-1" >
-                            <div class="w-full h-full" style="background-position: center;
-  background-size: contain;
-  background-image: url(../../../../assets/image_prof_bouzekri.jpg);
-  background-repeat: no-repeat;">
-                            </div>
-                          </div>
-
-                          <div class="text-left p-1">
-                            <h3>Yunes El Bouzekri El Idrissi</h3>
-                            <p>Professor at Ibn Tofail University | IHM and JEE specialist | Backend Director
-                              | Dev Web | Javascript Expert</p>
-                          </div>
-                        </div>
-
-
-                      </mat-grid-tile>
-
-                    </div>
-
-
-                  </ng-container>
-
-                </mat-grid-list>
-
-              </div>
-            </div>
-          </mat-card-content>
-        </mat-card>
-
-      </div>
-    </div>
-
-
-    <div class="features-3" >
-      <div class="grid-container mb-5 mt-3 " >
-        <mat-card >
-          <mat-card-header>
-            <mat-card-title class="section-title-h2">TEAM DEVELOPERS</mat-card-title>
-          </mat-card-header>
-          <mat-card-content>
-            <div class="features ">
-              <div class="container"  >
-
-                <mat-grid-list cols="3" rowHeight="350px" >
-
-                  <ng-container [ngSwitch]="stepperOrientation | async">
-                    <div *ngSwitchCase="'horizontal'">
-
-
-                      <mat-grid-tile  [colspan]="1" [rowspan]="1" >
-
-                        <div class="icon-box">
-
-                          <div class="flex items-center w-full h-full" style="border-radius: 100%">
-                            <div class="w-full h-full " style="background-position: center;
-                            border-radius: 100%;
-  background-size: contain;
-  background-image: url(../../../../assets/BenaliMouad500x500.jpg);
-  background-repeat: no-repeat;">
-                            </div>
-
-                          </div>
-                          <h3>Mouad Benali</h3>
-                        </div>
-
-                      </mat-grid-tile>
-
-                      <mat-grid-tile  [colspan]="1" [rowspan]="1" >
-
-                        <div class="icon-box">
-
-                          <div class="flex items-center w-full h-full" style="border-radius: 100%">
-                            <div class="w-full h-full " style="background-position: center;
-                            border-radius: 100%;
-  background-size: contain;
-  background-image: url(../../../../assets/omar_tof.jpeg);
-  background-repeat: no-repeat;">
-                            </div>
-
-                          </div>
-                          <h3>Omar Defaoui</h3>
-                        </div>
-
-                      </mat-grid-tile>
-
-                      <mat-grid-tile  [colspan]="1" [rowspan]="1" >
-
-                        <div class="icon-box">
-
-                          <div class="flex items-center w-full h-full" style="border-radius: 100%">
-                            <div class="w-full h-full " style="background-position: center;
-                            border-radius: 100%;
-  background-size: contain;
-  background-image: url(../../../../assets/benassertof.jpg);
-  background-repeat: no-repeat;">
-                            </div>
-
-                          </div>
-                          <h3>Hassan Ayoub Benasser</h3>
-                        </div>
-
-                      </mat-grid-tile>
-
-                      <mat-grid-tile  [colspan]="1" [rowspan]="1" >
-
-                        <div class="icon-box">
-
-                          <div class="flex items-center w-full h-full" style="border-radius: 100%">
-                            <div class="w-full h-full " style="background-position: center;
-                            border-radius: 100%;
-  background-size: contain;
-  background-image: url(../../../../assets/DSC_48++.jpg);
-  background-repeat: no-repeat;">
-                            </div>
-
-                          </div>
-                          <h3>Mohamed Saad Ohassan</h3>
-                        </div>
-
-                      </mat-grid-tile>
-
-                      <mat-grid-tile  [colspan]="1" [rowspan]="1" >
-
-                        <div class="icon-box">
-
-                          <div class="flex items-center w-full h-full" style="border-radius: 100%">
-                            <div class="w-full h-full " style="background-position: center;
-                            border-radius: 100%;
-  background-size: contain;
-  background-image: url(../../../../assets/alaouitof.jpeg);
-  background-repeat: no-repeat;">
-                            </div>
-
-                          </div>
-                          <h3>Hamza Alaoui</h3>
-                        </div>
-
-                      </mat-grid-tile>
-
-                      <mat-grid-tile  [colspan]="1" [rowspan]="1" >
-
-                        <div class="icon-box">
-
-                          <div class="flex items-center w-full h-full" style="border-radius: 100%">
-                            <div class="w-full h-full " style="background-position: center;
-                            border-radius: 100%;
-  background-size: contain;
-  background-image: url(../../../../assets/Haytem_Barrik_tof.jpeg);
-  background-repeat: no-repeat;">
-                            </div>
-
-                          </div>
-                          <h3 >Barik Haytam</h3>
-                        </div>
-
-                      </mat-grid-tile>
-
-                      <mat-grid-tile  [colspan]="1" [rowspan]="1" >
-
-                        <div class="icon-box" >
-
-                          <div class="flex items-center w-full h-full" style="border-radius: 100%">
-                            <div class="w-full h-full " style="background-position: center;
-                            border-radius: 100%;
-  background-size: contain;
-  background-image: url(../../../../assets/souhail_tof.jpeg);
-  background-repeat: no-repeat;">
-                            </div>
-
-                          </div>
-                          <h3>Souhail El Mrihy</h3>
-                        </div>
-
-                      </mat-grid-tile>
-
-                    </div>
-
-                    <div *ngSwitchCase="'vertical'" class="grid-container-sm">
-
-                      <mat-grid-tile  [colspan]="3" [rowspan]="1" >
-
-                        <div class="icon-box w-full text-center">
-
-                          <div class="flex items-center w-full h-full" style="border-radius: 100%">
-                            <div class="w-full h-full " style="background-position: center;
-                            border-radius: 100%;
-  background-size: contain;
-  background-image: url(../../../../assets/BenaliMouad500x500.jpg);
-  background-repeat: no-repeat;">
-                            </div>
-
-                          </div>
-                          <h3 class="text-center w-full">Mouad Benali</h3>
-                        </div>
-
-                      </mat-grid-tile>
-
-                      <mat-grid-tile  [colspan]="3" [rowspan]="1" >
-
-                        <div class="icon-box w-full text-center">
-
-                          <div class="flex items-center w-full h-full" style="border-radius: 100%">
-                            <div class="w-full h-full " style="background-position: center;
-                            border-radius: 100%;
-  background-size: contain;
-  background-image: url(../../../../assets/omar_tof.jpeg);
-  background-repeat: no-repeat;">
-                            </div>
-
-                          </div>
-                          <h3 class="text-center w-full">Omar Defaoui</h3>
-                        </div>
-
-                      </mat-grid-tile>
-
-                      <mat-grid-tile  [colspan]="3" [rowspan]="1" >
-
-                        <div class="icon-box w-full text-center">
-
-                          <div class="flex items-center w-full h-full" style="border-radius: 100%">
-                            <div class="w-full h-full " style="background-position: center;
-                            border-radius: 100%;
-  background-size: contain;
-  background-image: url(../../../../assets/benassertof.jpg);
-  background-repeat: no-repeat;">
-                            </div>
-
-                          </div>
-                          <h3 class="text-center w-full">Hassan Ayoub Benasser</h3>
-                        </div>
-
-                      </mat-grid-tile>
-
-                      <mat-grid-tile  [colspan]="3" [rowspan]="1" >
-
-                        <div class="icon-box w-full text-center">
-
-                          <div class="flex items-center w-full h-full" style="border-radius: 100%">
-                            <div class="w-full h-full " style="background-position: center;
-                            border-radius: 100%;
-  background-size: contain;
-  background-image: url(../../../../assets/DSC_48++.jpg);
-  background-repeat: no-repeat;">
-                            </div>
-
-                          </div>
-                          <h3 class="text-center w-full">Mohamed Saad Ohassan</h3>
-                        </div>
-
-                      </mat-grid-tile>
-
-                      <mat-grid-tile  [colspan]="3" [rowspan]="1" >
-
-                        <div class="icon-box w-full text-center">
-
-                          <div class="flex items-center w-full h-full" style="border-radius: 100%">
-                            <div class="w-full h-full " style="background-position: center;
-                            border-radius: 100%;
-  background-size: contain;
-  background-image: url(../../../../assets/alaouitof.jpeg);
-  background-repeat: no-repeat;">
-                            </div>
-
-                          </div>
-                          <h3 class="text-center w-full">Hamza Alaoui</h3>
-                        </div>
-
-                      </mat-grid-tile>
-
-                      <mat-grid-tile  [colspan]="3" [rowspan]="1" >
-
-                        <div class="icon-box w-full text-center">
-
-                          <div class="flex items-center w-full h-full" style="border-radius: 100%">
-                            <div class="w-full h-full " style="background-position: center;
-                            border-radius: 100%;
-  background-size: contain;
-  background-image: url(../../../../assets/Haytem_Barrik_tof.jpeg);
-  background-repeat: no-repeat;">
-                            </div>
-
-                          </div>
-                          <h3 class="text-center w-full">Barik Haytam</h3>
-                        </div>
-
-                      </mat-grid-tile>
-
-                      <mat-grid-tile  [colspan]="3" [rowspan]="1" >
-
-                        <div class="icon-box w-full text-center">
-
-                          <div class="flex items-center w-full h-full" style="border-radius: 100%">
-                            <div class="w-full h-full " style="background-position: center;
-                            border-radius: 100%;
-  background-size: contain;
-  background-image: url(../../../../assets/souhail_tof.jpeg);
-  background-repeat: no-repeat;">
-                            </div>
-
-                          </div>
-                          <h3 class="text-center w-full">Souhail El Mrihy</h3>
-                        </div>
-
-                      </mat-grid-tile>
-
-                    </div>
-
-
-                  </ng-container>
-
-                </mat-grid-list>
-
-              </div>
-            </div>
-          </mat-card-content>
-        </mat-card>
-
-      </div>
-    </div>
-
-  </div>
-
-
-
+	<header class="py-4 border-b fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-white/50">
+		<div class="container mx-auto flex justify-between items-center">
+			<div class="h-8">
+				<svg class="h-8" viewBox="0 0 735 281" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M51.2353 36.3435V61.2216H99.9792V93.4548H51.2353V120.929H106.478V154.893H8.77396V2.37963H106.478V36.3435H51.2353Z" fill="#5552FE"/>
+					<path d="M268.926 154.893H226.465L169.922 69.6585V154.893H127.46V2.37963H169.922L226.465 88.6956V2.37963H268.926V154.893Z" fill="#5552FE"/>
+					<path d="M350.74 156.407C332.975 156.407 318.388 152.225 306.978 143.86C295.569 135.351 289.431 123.236 288.564 107.516H333.842C334.275 112.852 335.864 116.746 338.608 119.198C341.352 121.65 344.89 122.876 349.223 122.876C353.123 122.876 356.3 121.938 358.755 120.064C361.355 118.044 362.655 115.304 362.655 111.843C362.655 107.372 360.561 103.911 356.372 101.459C352.184 99.0073 345.396 96.2671 336.008 93.2385C326.043 89.9214 317.955 86.7486 311.744 83.72C305.678 80.5471 300.335 76.0042 295.713 70.0911C291.236 64.0339 288.997 56.1739 288.997 46.5111C288.997 36.7041 291.452 28.3393 296.363 21.4167C301.273 14.3499 308.062 9.01378 316.727 5.40826C325.393 1.80275 335.214 0 346.19 0C363.955 0 378.108 4.18239 388.651 12.5472C399.339 20.7677 405.044 32.3775 405.766 47.3764H359.622C359.477 42.7614 358.033 39.3001 355.289 36.9925C352.689 34.685 349.295 33.5312 345.107 33.5312C341.93 33.5312 339.33 34.4687 337.308 36.3435C335.286 38.2184 334.275 40.8865 334.275 44.3478C334.275 47.2322 335.358 49.756 337.524 51.9194C339.835 53.9384 342.652 55.7412 345.973 57.3276C349.295 58.7698 354.206 60.6447 360.705 62.9522C370.382 66.2693 378.325 69.5864 384.535 72.9034C390.89 76.0763 396.306 80.6192 400.783 86.5323C405.405 92.3011 407.716 99.6563 407.716 108.598C407.716 117.684 405.405 125.832 400.783 133.043C396.306 140.254 389.735 145.951 381.069 150.133C372.548 154.316 362.438 156.407 350.74 156.407Z" fill="#5552FE"/>
+					<path d="M524.077 130.015H469.917L461.684 154.893H417.057L472.733 2.37963H521.694L577.153 154.893H532.309L524.077 130.015ZM513.461 97.5651L496.997 48.2417L480.749 97.5651H513.461Z" fill="#5552FE"/>
+					<path d="M681.332 154.893L633.454 88.0466V154.893H590.993V2.37963H633.454V68.1442L680.898 2.37963H729.859L673.749 76.3647L732.675 154.893H681.332Z" fill="#5552FE"/>
+					<path d="M0 227.309C0 216.998 2.1348 207.826 6.40441 199.795C10.7733 191.664 16.9295 185.368 24.8729 180.907C32.8164 176.346 41.9514 174.065 52.2778 174.065C65.3845 174.065 76.4061 177.585 85.3425 184.625C94.2788 191.565 100.038 201.034 102.619 213.032H71.1932C69.3066 209.066 66.6753 206.041 63.2994 203.959C60.0227 201.877 56.1999 200.836 51.831 200.836C45.0791 200.836 39.6676 203.265 35.5966 208.124C31.6249 212.883 29.639 219.278 29.639 227.309C29.639 235.44 31.6249 241.934 35.5966 246.793C39.6676 251.552 45.0791 253.932 51.831 253.932C56.1999 253.932 60.0227 252.891 63.2994 250.808C66.6753 248.726 69.3066 245.702 71.1932 241.736H102.619C100.038 253.733 94.2788 263.252 85.3425 270.292C76.4061 277.232 65.3845 280.703 52.2778 280.703C41.9514 280.703 32.8164 278.472 24.8729 274.01C16.9295 269.449 10.7733 263.153 6.40441 255.121C2.1348 246.991 0 237.72 0 227.309Z" fill="#5552FE"/>
+					<path d="M166.785 281C156.955 281 147.919 278.72 139.678 274.159C131.436 269.498 124.883 263.103 120.017 254.973C115.251 246.743 112.868 237.472 112.868 227.161C112.868 216.849 115.251 207.628 120.017 199.497C124.883 191.268 131.436 184.873 139.678 180.312C147.919 175.751 156.955 173.47 166.785 173.47C176.714 173.47 185.75 175.751 193.892 180.312C202.133 184.873 208.637 191.268 213.403 199.497C218.169 207.628 220.552 216.849 220.552 227.161C220.552 237.472 218.169 246.743 213.403 254.973C208.637 263.103 202.133 269.498 193.892 274.159C185.65 278.72 176.615 281 166.785 281ZM166.785 253.932C174.232 253.932 180.09 251.502 184.359 246.644C188.728 241.786 190.913 235.291 190.913 227.161C190.913 218.832 188.728 212.288 184.359 207.529C180.09 202.67 174.232 200.241 166.785 200.241C159.238 200.241 153.33 202.67 149.061 207.529C144.791 212.288 142.656 218.832 142.656 227.161C142.656 235.39 144.791 241.934 149.061 246.793C153.33 251.552 159.238 253.932 166.785 253.932Z" fill="#5552FE"/>
+					<path d="M330.932 279.959H301.74L262.867 221.36V279.959H233.675V175.106H262.867L301.74 234.448V175.106H330.932V279.959Z" fill="#5552FE"/>
+					<path d="M444.819 279.959H415.627L376.753 221.36V279.959H347.561V175.106H376.753L415.627 234.448V175.106H444.819V279.959Z" fill="#5552FE"/>
+					<path d="M490.64 198.456V215.56H524.151V237.72H490.64V256.609H528.62V279.959H461.448V175.106H528.62V198.456H490.64Z" fill="#5552FE"/>
+					<path d="M539.47 227.309C539.47 216.998 541.605 207.826 545.874 199.795C550.243 191.664 556.4 185.368 564.343 180.907C572.286 176.346 581.421 174.065 591.748 174.065C604.855 174.065 615.876 177.585 624.813 184.625C633.749 191.565 639.508 201.034 642.09 213.032H610.663C608.777 209.066 606.145 206.041 602.769 203.959C599.493 201.877 595.67 200.836 591.301 200.836C584.549 200.836 579.138 203.265 575.067 208.124C571.095 212.883 569.109 219.278 569.109 227.309C569.109 235.44 571.095 241.934 575.067 246.793C579.138 251.552 584.549 253.932 591.301 253.932C595.67 253.932 599.493 252.891 602.769 250.808C606.145 248.726 608.777 245.702 610.663 241.736H642.09C639.508 253.733 633.749 263.252 624.813 270.292C615.876 277.232 604.855 280.703 591.748 280.703C581.421 280.703 572.286 278.472 564.343 274.01C556.4 269.449 550.243 263.153 545.874 255.121C541.605 246.991 539.47 237.72 539.47 227.309Z" fill="#5552FE"/>
+					<path d="M735 175.106V198.308H706.999V279.959H677.807V198.308H650.104V175.106H735Z" fill="#5552FE"/>
+				</svg>
+			</div>
+
+			<nav class="flex gap-4 items-center">
+				<button class="bg-primary text-white px-4 py-2 text-base rounded">Login</button>
+				<a href="#hero" class="bg-white text-primary px-4 py-2 text-base rounded border border-primary">Download Demo</a>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section id="hero" class="bg-gradient-to-t from-primary/10 to-primary/0 relative">
+			<div class="h-screen flex justify-between items-center gap-12">
+				<div id="hero-left" class="container mx-auto">
+					<div class="mb-8">
+						<svg class="h-32" viewBox="0 0 735 281" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M51.2353 36.3435V61.2216H99.9792V93.4548H51.2353V120.929H106.478V154.893H8.77396V2.37963H106.478V36.3435H51.2353Z" fill="#5552FE"/>
+							<path d="M268.926 154.893H226.465L169.922 69.6585V154.893H127.46V2.37963H169.922L226.465 88.6956V2.37963H268.926V154.893Z" fill="#5552FE"/>
+							<path d="M350.74 156.407C332.975 156.407 318.388 152.225 306.978 143.86C295.569 135.351 289.431 123.236 288.564 107.516H333.842C334.275 112.852 335.864 116.746 338.608 119.198C341.352 121.65 344.89 122.876 349.223 122.876C353.123 122.876 356.3 121.938 358.755 120.064C361.355 118.044 362.655 115.304 362.655 111.843C362.655 107.372 360.561 103.911 356.372 101.459C352.184 99.0073 345.396 96.2671 336.008 93.2385C326.043 89.9214 317.955 86.7486 311.744 83.72C305.678 80.5471 300.335 76.0042 295.713 70.0911C291.236 64.0339 288.997 56.1739 288.997 46.5111C288.997 36.7041 291.452 28.3393 296.363 21.4167C301.273 14.3499 308.062 9.01378 316.727 5.40826C325.393 1.80275 335.214 0 346.19 0C363.955 0 378.108 4.18239 388.651 12.5472C399.339 20.7677 405.044 32.3775 405.766 47.3764H359.622C359.477 42.7614 358.033 39.3001 355.289 36.9925C352.689 34.685 349.295 33.5312 345.107 33.5312C341.93 33.5312 339.33 34.4687 337.308 36.3435C335.286 38.2184 334.275 40.8865 334.275 44.3478C334.275 47.2322 335.358 49.756 337.524 51.9194C339.835 53.9384 342.652 55.7412 345.973 57.3276C349.295 58.7698 354.206 60.6447 360.705 62.9522C370.382 66.2693 378.325 69.5864 384.535 72.9034C390.89 76.0763 396.306 80.6192 400.783 86.5323C405.405 92.3011 407.716 99.6563 407.716 108.598C407.716 117.684 405.405 125.832 400.783 133.043C396.306 140.254 389.735 145.951 381.069 150.133C372.548 154.316 362.438 156.407 350.74 156.407Z" fill="#5552FE"/>
+							<path d="M524.077 130.015H469.917L461.684 154.893H417.057L472.733 2.37963H521.694L577.153 154.893H532.309L524.077 130.015ZM513.461 97.5651L496.997 48.2417L480.749 97.5651H513.461Z" fill="#5552FE"/>
+							<path d="M681.332 154.893L633.454 88.0466V154.893H590.993V2.37963H633.454V68.1442L680.898 2.37963H729.859L673.749 76.3647L732.675 154.893H681.332Z" fill="#5552FE"/>
+							<path d="M0 227.309C0 216.998 2.1348 207.826 6.40441 199.795C10.7733 191.664 16.9295 185.368 24.8729 180.907C32.8164 176.346 41.9514 174.065 52.2778 174.065C65.3845 174.065 76.4061 177.585 85.3425 184.625C94.2788 191.565 100.038 201.034 102.619 213.032H71.1932C69.3066 209.066 66.6753 206.041 63.2994 203.959C60.0227 201.877 56.1999 200.836 51.831 200.836C45.0791 200.836 39.6676 203.265 35.5966 208.124C31.6249 212.883 29.639 219.278 29.639 227.309C29.639 235.44 31.6249 241.934 35.5966 246.793C39.6676 251.552 45.0791 253.932 51.831 253.932C56.1999 253.932 60.0227 252.891 63.2994 250.808C66.6753 248.726 69.3066 245.702 71.1932 241.736H102.619C100.038 253.733 94.2788 263.252 85.3425 270.292C76.4061 277.232 65.3845 280.703 52.2778 280.703C41.9514 280.703 32.8164 278.472 24.8729 274.01C16.9295 269.449 10.7733 263.153 6.40441 255.121C2.1348 246.991 0 237.72 0 227.309Z" fill="#5552FE"/>
+							<path d="M166.785 281C156.955 281 147.919 278.72 139.678 274.159C131.436 269.498 124.883 263.103 120.017 254.973C115.251 246.743 112.868 237.472 112.868 227.161C112.868 216.849 115.251 207.628 120.017 199.497C124.883 191.268 131.436 184.873 139.678 180.312C147.919 175.751 156.955 173.47 166.785 173.47C176.714 173.47 185.75 175.751 193.892 180.312C202.133 184.873 208.637 191.268 213.403 199.497C218.169 207.628 220.552 216.849 220.552 227.161C220.552 237.472 218.169 246.743 213.403 254.973C208.637 263.103 202.133 269.498 193.892 274.159C185.65 278.72 176.615 281 166.785 281ZM166.785 253.932C174.232 253.932 180.09 251.502 184.359 246.644C188.728 241.786 190.913 235.291 190.913 227.161C190.913 218.832 188.728 212.288 184.359 207.529C180.09 202.67 174.232 200.241 166.785 200.241C159.238 200.241 153.33 202.67 149.061 207.529C144.791 212.288 142.656 218.832 142.656 227.161C142.656 235.39 144.791 241.934 149.061 246.793C153.33 251.552 159.238 253.932 166.785 253.932Z" fill="#5552FE"/>
+							<path d="M330.932 279.959H301.74L262.867 221.36V279.959H233.675V175.106H262.867L301.74 234.448V175.106H330.932V279.959Z" fill="#5552FE"/>
+							<path d="M444.819 279.959H415.627L376.753 221.36V279.959H347.561V175.106H376.753L415.627 234.448V175.106H444.819V279.959Z" fill="#5552FE"/>
+							<path d="M490.64 198.456V215.56H524.151V237.72H490.64V256.609H528.62V279.959H461.448V175.106H528.62V198.456H490.64Z" fill="#5552FE"/>
+							<path d="M539.47 227.309C539.47 216.998 541.605 207.826 545.874 199.795C550.243 191.664 556.4 185.368 564.343 180.907C572.286 176.346 581.421 174.065 591.748 174.065C604.855 174.065 615.876 177.585 624.813 184.625C633.749 191.565 639.508 201.034 642.09 213.032H610.663C608.777 209.066 606.145 206.041 602.769 203.959C599.493 201.877 595.67 200.836 591.301 200.836C584.549 200.836 579.138 203.265 575.067 208.124C571.095 212.883 569.109 219.278 569.109 227.309C569.109 235.44 571.095 241.934 575.067 246.793C579.138 251.552 584.549 253.932 591.301 253.932C595.67 253.932 599.493 252.891 602.769 250.808C606.145 248.726 608.777 245.702 610.663 241.736H642.09C639.508 253.733 633.749 263.252 624.813 270.292C615.876 277.232 604.855 280.703 591.748 280.703C581.421 280.703 572.286 278.472 564.343 274.01C556.4 269.449 550.243 263.153 545.874 255.121C541.605 246.991 539.47 237.72 539.47 227.309Z" fill="#5552FE"/>
+							<path d="M735 175.106V198.308H706.999V279.959H677.807V198.308H650.104V175.106H735Z" fill="#5552FE"/>
+						</svg>
+					</div>
+					<p class=" text-gray-800 text-lg w-1/2">
+						ENSAK Connect is an application developed for the National School of Applied Sciences of Kenitra (ENSA-Kenitra) community with the aim of facilitating students integration into the job market.
+					</p>
+					<div class="mt-12 flex gap-4 items-stretch">
+						<a href="#" target="_blank" class="market-btn google-btn bg-white text-primary px-4 py-2 text-base rounded hover:bg-gray-200 border" role="button">
+							<span class="market-button-subtitle text-gray-500">Download on the</span>
+							<span class="market-button-title text-gray-800">Google Play</span>
+						</a>
+						<a href="#" target="_blank" class="market-btn github-btn bg-[#010409] text-primary px-4 py-2 text-base rounded border hover:bg-gray-800" role="button">
+							<span class="market-button-subtitle text-white/80">View source on the</span>
+							<span class="market-button-title text-white">GitHub</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="hero-right" class="w-1/2 absolute z-10 right-0 bottom-0">
+				<img class="w-fit object-cover" src="../../../../assets/app-preview-2.png" alt="app preview">
+			</div>
+		</section>
+
+		<section>
+			<div class="container mx-auto py-16">
+				<div class="grid grid-cols-3 gap-16">
+					<div class="p-4 rounded border border-gray-300">
+						<img src="../../../../assets/Joboffers.gif" alt="job offers" class="mb-4 rounded overflow-hidden w-1/3">
+						<span class="block text-xl font-medium text-gray-800 mb-4">Find new opportunities</span>
+						<p class="text-gray-600 text-justify text-base">
+							Our dedicated community will help you create better opportunities for future jobs and internships.
+						</p>
+					</div>
+					<div class="p-4 rounded border border-gray-300">
+						<img src="../../../../assets/Content.gif" alt="job offers" class="mb-4 rounded overflow-hidden w-1/3">
+						<span class="block text-xl font-medium text-gray-800 mb-4">Share your experiences</span>
+						<p class="text-gray-600 text-justify text-base">
+							Give back to the community by sharing your experiences and what exciting thing you are working on.
+						</p>
+					</div>
+					<div class="p-4 rounded border border-gray-300">
+						<img src="../../../../assets/Questions.gif" alt="job offers" class="mb-4 rounded overflow-hidden w-1/3">
+						<span class="block text-xl font-medium text-gray-800 mb-4">Ask questions</span>
+						<p class="text-gray-600 text-justify text-base">
+							Find answers for you questions easily with the help of the community, and don't forget to give answers too!
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-primary text-white py-24">
+			<div class="container mx-auto">
+				<span class="text-3xl font-medium block mb-8">Project Directors</span>
+				<div class="grid grid-cols-2 gap-8">
+					<div class="border rounded-lg text-gray-800 bg-white p-8 flex items-center gap-4">
+						<div class="h-36 w-h-36 flex-shrink-0 flex-grow-0">
+							<img src="../../../../assets/image_prof_gahi.jpg" alt="Professor Gahi" class="h-36 w-h-36 rounded-full">
+						</div>
+						<div class="text-left p-1">
+							<span class="text-2xl font-medium mb-4 block">Youssef GAHI</span>
+							<p class="text-base text-opacity-70">Associate Professor | Data Transformatioin Specialist | Big Data
+							  Trainer | Industry-Academia coordinator | Senior Researcher | IEEE Senior Member</p>
+						  </div>
+					</div>
+					<div class="border rounded-lg text-gray-800 bg-white p-8 flex items-center gap-4">
+						<div class="h-36 w-h-36 flex-shrink-0 flex-grow-0">
+							<img src="../../../../assets/image_prof_bouzekri.jpg" alt="Professor Younès EL BOUZEKRI EL IDRISS" class="h-36 w-h-36 rounded-full">
+						</div>
+						<div class="text-left p-1">
+							<span class="text-2xl font-medium mb-4 block">Younès EL BOUZEKRI EL IDRISS</span>
+							<p class="text-base text-opacity-70">Professor at Ibn Tofail University | IHM and JEE specialist | Backend Director
+								| Dev Web | Javascript Exper</p>
+						  </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-primary/5 text-white py-24">
+			<div class="container mx-auto">
+				<span class="text-4xl font-medium block mb-16 text-primary text-center">Developers</span>
+				<div class="flex gap-24 justify-center flex-wrap">
+					<div class="rounded-lg bg-primary text-white px-4 py-8 w-1/6">
+						<img src="../../../../assets/BenaliMouad500x500.jpg" alt="Pdeveloper image" class="h-36 w-36 object-cover flex-shrink-0 flex-grow-0 mx-auto rounded-lg mb-4 border-2 border-white">
+						<span class="text-2xl font-medium block text-center">Mouad Benali</span>
+					</div>
+					<div class="rounded-lg bg-primary text-white px-4 py-8 w-1/6">
+						<img src="../../../../assets/omar_tof.jpeg" alt="Pdeveloper image" class="h-36 w-36 object-cover flex-shrink-0 flex-grow-0 mx-auto rounded-lg mb-4 border-2 border-white">
+						<span class="text-2xl font-medium block text-center">Omar Defaoui</span>
+					</div>
+					<div class="rounded-lg bg-primary text-white px-4 py-8 w-1/6">
+						<img src="../../../../assets/benassertof.jpg" alt="Pdeveloper image" class="h-36 w-36 object-cover flex-shrink-0 flex-grow-0 mx-auto rounded-lg mb-4 border-2 border-white">
+						<span class="text-2xl font-medium block text-center">Hassan Ayoub Benasser</span>
+					</div>
+					<div class="rounded-lg bg-primary text-white px-4 py-8 w-1/6">
+						<img src="../../../../assets/DSC_48++.jpg" alt="Pdeveloper image" class="h-36 w-36 object-cover flex-shrink-0 flex-grow-0 mx-auto rounded-lg mb-4 border-2 border-white">
+						<span class="text-2xl font-medium block text-center">Mohamed Saad Ohassan</span>
+					</div>
+					<div class="rounded-lg bg-primary text-white px-4 py-8 w-1/6">
+						<img src="../../../../assets/alaouitof.jpeg" alt="Pdeveloper image" class="h-36 w-36 object-cover flex-shrink-0 flex-grow-0 mx-auto rounded-lg mb-4 border-2 border-white">
+						<span class="text-2xl font-medium block text-center">Hamza Alaoui</span>
+					</div>
+					<div class="rounded-lg bg-primary text-white px-4 py-8 w-1/6">
+						<img src="../../../../assets/Haytem_Barrik_tof.jpeg" alt="Pdeveloper image" class="h-36 w-36 object-cover flex-shrink-0 flex-grow-0 mx-auto rounded-lg mb-4 border-2 border-white">
+						<span class="text-2xl font-medium block text-center">Barik Haytam</span>
+					</div>
+					<div class="rounded-lg bg-primary text-white px-4 py-8 w-1/6">
+						<img src="../../../../assets/souhail_tof.jpeg" alt="Pdeveloper image" class="h-36 w-36 object-cover flex-shrink-0 flex-grow-0 mx-auto rounded-lg mb-4 border-2 border-white">
+						<span class="text-2xl font-medium block text-center">Souhail El Mrihy</span>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="bg-primary">
+		<div class="container mx-auto flex justify-between items-center py-16">
+			<div>
+				<svg class="h-16" viewBox="0 0 735 281" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M51.2353 36.3435V61.2216H99.9792V93.4548H51.2353V120.929H106.478V154.893H8.77396V2.37963H106.478V36.3435H51.2353Z" fill="#F7FAFC"/>
+					<path d="M268.926 154.893H226.465L169.922 69.6585V154.893H127.46V2.37963H169.922L226.465 88.6956V2.37963H268.926V154.893Z" fill="#F7FAFC"/>
+					<path d="M350.74 156.407C332.975 156.407 318.388 152.225 306.978 143.86C295.569 135.351 289.431 123.236 288.564 107.516H333.842C334.275 112.852 335.864 116.746 338.608 119.198C341.352 121.65 344.89 122.876 349.223 122.876C353.123 122.876 356.3 121.938 358.755 120.064C361.355 118.044 362.655 115.304 362.655 111.843C362.655 107.372 360.561 103.911 356.372 101.459C352.184 99.0073 345.396 96.2671 336.008 93.2385C326.043 89.9214 317.955 86.7486 311.744 83.72C305.678 80.5471 300.335 76.0042 295.713 70.0911C291.236 64.0339 288.997 56.1739 288.997 46.5111C288.997 36.7041 291.452 28.3393 296.363 21.4167C301.273 14.3499 308.062 9.01378 316.727 5.40826C325.393 1.80275 335.214 0 346.19 0C363.955 0 378.108 4.18239 388.651 12.5472C399.339 20.7677 405.044 32.3775 405.766 47.3764H359.622C359.477 42.7614 358.033 39.3001 355.289 36.9925C352.689 34.685 349.295 33.5312 345.107 33.5312C341.93 33.5312 339.33 34.4687 337.308 36.3435C335.286 38.2184 334.275 40.8865 334.275 44.3478C334.275 47.2322 335.358 49.756 337.525 51.9194C339.835 53.9384 342.652 55.7412 345.973 57.3276C349.295 58.7698 354.206 60.6447 360.705 62.9522C370.382 66.2693 378.325 69.5864 384.535 72.9034C390.89 76.0763 396.306 80.6192 400.783 86.5323C405.405 92.3011 407.716 99.6563 407.716 108.598C407.716 117.684 405.405 125.832 400.783 133.043C396.306 140.254 389.735 145.951 381.069 150.133C372.548 154.316 362.438 156.407 350.74 156.407Z" fill="#F7FAFC"/>
+					<path d="M524.077 130.015H469.917L461.684 154.893H417.057L472.733 2.37963H521.694L577.153 154.893H532.309L524.077 130.015ZM513.461 97.5651L496.997 48.2417L480.749 97.5651H513.461Z" fill="#F7FAFC"/>
+					<path d="M681.331 154.893L633.454 88.0466V154.893H590.993V2.37963H633.454V68.1441L680.898 2.37963H729.859L673.749 76.3647L732.675 154.893H681.331Z" fill="#F7FAFC"/>
+					<path d="M0 227.309C0 216.998 2.1348 207.826 6.40441 199.795C10.7733 191.664 16.9295 185.368 24.8729 180.906C32.8164 176.346 41.9514 174.065 52.2778 174.065C65.3845 174.065 76.4061 177.585 85.3425 184.625C94.2788 191.565 100.038 201.034 102.619 213.032H71.1932C69.3066 209.066 66.6753 206.041 63.2994 203.959C60.0227 201.877 56.1999 200.836 51.831 200.836C45.0791 200.836 39.6676 203.265 35.5966 208.124C31.6249 212.883 29.639 219.278 29.639 227.309C29.639 235.44 31.6249 241.934 35.5966 246.793C39.6676 251.552 45.0791 253.932 51.831 253.932C56.1999 253.932 60.0227 252.891 63.2994 250.808C66.6753 248.726 69.3066 245.702 71.1932 241.736H102.619C100.038 253.733 94.2788 263.252 85.3425 270.292C76.4061 277.232 65.3845 280.703 52.2778 280.703C41.9514 280.703 32.8164 278.472 24.8729 274.01C16.9295 269.449 10.7733 263.153 6.40441 255.121C2.1348 246.991 0 237.72 0 227.309Z" fill="#F7FAFC"/>
+					<path d="M166.785 281C156.955 281 147.919 278.72 139.678 274.159C131.436 269.498 124.883 263.103 120.017 254.973C115.251 246.743 112.868 237.472 112.868 227.161C112.868 216.849 115.251 207.628 120.017 199.497C124.883 191.268 131.436 184.873 139.678 180.312C147.919 175.751 156.955 173.47 166.785 173.47C176.714 173.47 185.75 175.751 193.892 180.312C202.133 184.873 208.637 191.268 213.403 199.497C218.169 207.628 220.552 216.849 220.552 227.161C220.552 237.472 218.169 246.743 213.403 254.973C208.637 263.103 202.133 269.498 193.892 274.159C185.65 278.72 176.615 281 166.785 281ZM166.785 253.932C174.232 253.932 180.09 251.502 184.359 246.644C188.728 241.786 190.913 235.291 190.913 227.161C190.913 218.832 188.728 212.288 184.359 207.529C180.09 202.67 174.232 200.241 166.785 200.241C159.238 200.241 153.33 202.67 149.061 207.529C144.791 212.288 142.656 218.832 142.656 227.161C142.656 235.39 144.791 241.934 149.061 246.793C153.33 251.552 159.238 253.932 166.785 253.932Z" fill="#F7FAFC"/>
+					<path d="M330.932 279.959H301.74L262.867 221.36V279.959H233.675V175.106H262.867L301.74 234.448V175.106H330.932V279.959Z" fill="#F7FAFC"/>
+					<path d="M444.819 279.959H415.627L376.753 221.36V279.959H347.561V175.106H376.753L415.627 234.448V175.106H444.819V279.959Z" fill="#F7FAFC"/>
+					<path d="M490.64 198.456V215.56H524.151V237.72H490.64V256.609H528.62V279.959H461.448V175.106H528.62V198.456H490.64Z" fill="#F7FAFC"/>
+					<path d="M539.47 227.309C539.47 216.998 541.605 207.826 545.875 199.795C550.243 191.664 556.4 185.368 564.343 180.906C572.286 176.346 581.421 174.065 591.748 174.065C604.855 174.065 615.876 177.585 624.813 184.625C633.749 191.565 639.508 201.034 642.09 213.032H610.663C608.777 209.066 606.145 206.041 602.769 203.959C599.493 201.877 595.67 200.836 591.301 200.836C584.549 200.836 579.138 203.265 575.067 208.124C571.095 212.883 569.109 219.278 569.109 227.309C569.109 235.44 571.095 241.934 575.067 246.793C579.138 251.552 584.549 253.932 591.301 253.932C595.67 253.932 599.493 252.891 602.769 250.808C606.145 248.726 608.777 245.702 610.663 241.736H642.09C639.508 253.733 633.749 263.252 624.813 270.292C615.876 277.232 604.855 280.703 591.748 280.703C581.421 280.703 572.286 278.472 564.343 274.01C556.4 269.449 550.243 263.153 545.875 255.121C541.605 246.991 539.47 237.72 539.47 227.309Z" fill="#F7FAFC"/>
+					<path d="M735 175.106V198.308H706.999V279.959H677.807V198.308H650.104V175.106H735Z" fill="#F7FAFC"/>
+				</svg>
+			</div>
+			<div class="flex gap-4 items-stretch">
+				<a href="#" target="_blank" class="market-btn google-btn bg-white text-primary px-4 py-2 text-base rounded hover:bg-gray-200" role="button">
+					<span class="market-button-subtitle text-gray-500">Download on the</span>
+					<span class="market-button-title text-gray-800">Google Play</span>
+				</a>
+				<a href="#" target="_blank" class="market-btn github-btn bg-[#010409] text-primary px-4 py-2 text-base rounded  hover:bg-gray-800" role="button">
+					<span class="market-button-subtitle text-white/80">View source on the</span>
+					<span class="market-button-title text-white">GitHub</span>
+				</a>
+			</div>
+		</div>
+		<div class="flex items-center justify-center bg-black/20 p-4">
+			<div class="text-white text-center">
+				<div class="px-4">
+					www.ensakconnect.com&copy; Copyright <strong><span>Ensak Connect</span></strong>.<br> All Rights Reserved
+				</div>
+			</div>
+		</div>
+	</footer>
 </div>
-
-
-
-
-
-<!-- ======= Footer ======= -->
-<footer id="footer" >
-  <div class="text-center py-4">
-    <div class="px-4">
-      &copy; Copyright <strong><span>Ensak Connect</span></strong>.<br> All Rights Reserved
-    </div>
-    <div>
-      <a href="/" >www.ensakconnect.com</a>
-    </div>
-  </div>
-</footer><!-- End Footer -->
-
 
 
 
